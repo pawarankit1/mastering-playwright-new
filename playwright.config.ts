@@ -11,6 +11,15 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
+if(!process.env.NODE_ENV)
+{
+  require('dotenv').config({path:`${__dirname}//src//config//.env`});
+}
+else
+{
+  require('dotenv').config({path:`${__dirname}//src//config//.env.${process.env.NODE_ENV}`});
+}
+
 export default defineConfig({
   testDir: './src/tests',
   /* Run tests in files in parallel */
@@ -41,15 +50,15 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     /* Test against mobile viewports. */
     // {
