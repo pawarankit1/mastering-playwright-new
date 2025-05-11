@@ -1,4 +1,4 @@
-import { test} from "@playwright/test";
+import { test } from "@playwright/test";
 import logger from "../utils/LoggerUtils";
 import LoginPage from "../pages/LoginPage";
 import cdata from "../testdata/contacts.json"
