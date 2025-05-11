@@ -1,5 +1,6 @@
 import { test,expect } from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
+import logger from "../utils/LoggerUtils";
 
 test("Test the login functionality", async ({page}) => {
     const loginPage = new LoginPage(page);
@@ -11,6 +12,7 @@ test("Test the login functionality", async ({page}) => {
     await loginPage.fillPassword(process.env.password!);
     const homePage = await loginPage.clickLoginButton();
     await homePage.expectedServiceTitleToAppear();
+    logger.info("Login successfully");
 }); 
 
 test("Eenv demo",async ({page}) => {

@@ -9,9 +9,13 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.52.0",
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^22.15.17"
   },
   "dependencies": {
-    "dotenv": "^16.5.0"
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.5.0",
+    "moment-timezone": "^0.5.48",
+    "winston": "^3.17.0"
   }
 }

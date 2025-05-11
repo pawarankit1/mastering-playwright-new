@@ -1,0 +1,26 @@
+${timestamp} [${level}]: ${message}
+${timestamp} [${level}]: ${message}
+${timestamp} [${level}]: ${message}
+${timestamp} [${level}]: ${message}
+${timestamp} [${level}]: ${message}
+2025-05-11T06:04:43-04:00 [info]: Navigate to login.salesforce.com
+2025-05-11T06:04:43-04:00 [info]: Insert username
+2025-05-11T06:04:43-04:00 [info]: Insert password
+2025-05-11T06:04:44-04:00 [info]: Clicked login button
+2025-05-11T06:04:47-04:00 [info]: Login sucessfully
+2025-05-11T08:07:11-04:00 [error]: Error in saving contact : Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Button', exact: true })[22m
+
+2025-05-11T08:07:11-04:00 [error]: Error in saving contact : Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Button', exact: true })[22m
+
+2025-05-11T08:08:15-04:00 [error]: Error in saving contact : Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Button', exact: true })[22m
+
+2025-05-11T08:08:15-04:00 [error]: Error in saving contact : Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Button', exact: true })[22m
+

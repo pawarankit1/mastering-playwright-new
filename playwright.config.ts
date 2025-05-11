@@ -39,8 +39,10 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     baseURL: "https://login.salesforce.com/",
-    trace : "on-first-retry",
-    screenshot : "on"
+    trace : "on",
+    screenshot : "on",
+    video : "on"
+
   },
 
   /* Configure projects for major browsers */
