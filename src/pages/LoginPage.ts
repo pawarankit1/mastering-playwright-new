@@ -35,5 +35,14 @@ export default class LoginPage{
         const homePage = new HomePage(this.page);
         return homePage;   
     }
+
+    async quickLogin(username : string, password : string){
+       await this.navigateToLoginPage();
+       await this.fillUsername(username);
+       await this.fillPassword(password);
+       await this.clickLoginButton();
+       return new HomePage(this.page);
+
+    }
     
 }

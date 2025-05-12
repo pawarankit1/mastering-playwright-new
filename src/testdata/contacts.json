@@ -1,12 +1,7 @@
 [
-{
+    {
     "firstName" : "Tom",
     "lastName" : "Van"
 
-},
-{
-    "firstName" : "Villi",
-    "lastName" : "Boss"
-}
-
+    }
 ]

@@ -24,3 +24,7 @@ Call log:
 Call log:
 [2m  - waiting for getByRole('button', { name: 'Button', exact: true })[22m
 
+2025-05-12T04:39:37-04:00 [error]: Error clicking the buttong : ${error}
+2025-05-12T04:45:46-04:00 [error]: Error clicking the buttong : ${error}
+2025-05-12T04:46:52-04:00 [error]: Error clicking the buttong : ${error}
+2025-05-12T04:54:49-04:00 [error]: Error clicking the buttong : ${error}

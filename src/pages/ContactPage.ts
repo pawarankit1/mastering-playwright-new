@@ -11,7 +11,7 @@ export default class ContactPage{
 
     constructor(private page : Page){ }
 
-    async createContact(firstName : String, lastName : String){
+    async createContact(firstName : string, lastName : string){
         await this.page.getByRole("button",{name : this.newButtonLocator}).click();
         logger.info("New button is clicked");
         await this.page.getByPlaceholder(this.firstNameTextFieldLocator).click();
