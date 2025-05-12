@@ -5,6 +5,11 @@ on:
   pull_request:
     branches: [ main, master ]
 jobs:
+  check-ip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show runner's public IP
+        run: curl https://ifconfig.me
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
