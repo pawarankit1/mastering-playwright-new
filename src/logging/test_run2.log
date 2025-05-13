@@ -58,3 +58,8 @@
 2025-05-12T06:00:42-04:00 [info]: last name fille with : LastName
 2025-05-12T06:00:43-04:00 [info]: Contact saved successfully
 2025-05-12T06:00:45-04:00 [info]: Serial01 and LastName is visible in contact label
+2025-05-12T06:56:21-04:00 [info]: Navigate to login.salesforce.com
+2025-05-12T06:56:21-04:00 [info]: Insert username
+2025-05-12T06:56:21-04:00 [info]: Insert password
+2025-05-12T06:56:22-04:00 [info]: Clicked login button
+2025-05-12T06:56:26-04:00 [info]: Service Title is visible
