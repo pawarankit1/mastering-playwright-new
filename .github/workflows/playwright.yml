@@ -20,11 +20,11 @@ jobs:
       - name: Authenticate with JWT
         run: |
           echo "${{ secrets.SF_HUB_KEY }}" > server.key
-          sfdx auth:jwt:grant --clientid ${{ secrets.SF_CLIENT_ID }} \
+          sfdx force:auth:jwt:grant --clientid ${{ secrets.SF_CLIENT_ID }} \
             --jwtkeyfile server.key \
             --username ${{ secrets.SF_USERNAME }} \
             --instanceurl ${{ secrets.SF_LOGIN_URL }}
-          sfdx force:config:set defaultusername=${{ secrets.SF_USERNAME }}
+          sfdx force:config:set defaultusername=${{ secrets.SF_USERNAME }} --global
 
       - uses: actions/setup-node@v4
         with:
